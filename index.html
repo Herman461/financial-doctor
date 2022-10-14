@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/style.css?_v=20221013062800">
+    <link rel="stylesheet" href="css/style.css?_v=20221014065641">
     <title>Главная</title>
 
 </head>
@@ -16,7 +16,7 @@
     <div class="wrapper">
         <header class="header">
             <div class="header__container container">
-                <a href="/" class="header__logo">
+                <a href="/" class="header__logo logo">
                     <img src="images/logo.svg" alt="">
                 </a>
                 <p class="header__label">Центр по банкротству
@@ -42,7 +42,7 @@
                         </nav>
                     </div>
                 </div>
-                <div class="header__phone phone">
+                <div class="header__phone phone" data-da=".menu__content,725.98,last">
                     <div class="phone__content">
                         <a href="tel:88005501158" class="phone__item">8 (800) 550 11 58</a>
                         <a href="" class="phone__callback">Позвонить нам</a>
@@ -53,55 +53,85 @@
                         </svg>
                     </div>
                 </div>
+                <button type="button" class="icon-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </header>
 
         <main class="page">
             <div class="main-block">
-                <div class="main-block__container container">
-                    <div class="main-block__content">
-                        <h1 class="main-block__title">Не можете больше платить по кредитам? <span>выход есть!</span>
-                        </h1>
-                        <div class="main-block__save save-main-block">
-                            <div class="save-main-block__image">
-                                <img src="images/intro/save.png" alt="">
+                <div class="main-block__body">
+                    <div class="main-block__container container">
+                        <div class="main-block__content">
+                            <h1 class="main-block__title">Не можете больше платить по кредитам? <span>выход есть!</span>
+                            </h1>
+                            <div class="main-block__save save-main-block">
+                                <div class="save-main-block__image">
+                                    <img src="images/intro/save.png" alt="">
+                                </div>
+                                <p class="save-main-block__text">Полностью и навсегда спишем долги и сохраним ваше имущество</p>
                             </div>
-                            <p class="save-main-block__text">Полностью и навсегда спишем долги и сохраним ваше имущество</p>
+                            <div data-da=".main-block,725.98,last" class="main-block__bottom">
+                                <a href="" class="main-block__button button">Записаться на консультацию</a>
+                                <p class="main-block__label">записывайтесь на беплатную консультацию
+                                    <br>и получите скидку 10% на любую услугу
+                                </p>
+                            </div>
+
                         </div>
-                        <a href="" class="main-block__button button">Записаться на консультацию</a>
-                        <p class="main-block__label">записывайтесь на беплатную консультацию
-                            <br>и получите скидку 10% на любую услугу
-                        </p>
+                        <div class="main-block__image">
+                            <img src="images/intro/man.png" alt="">
+                        </div>
+
                     </div>
-                    <div class="main-block__image">
-                        <img src="images/intro/man.png" alt="">
-                    </div>
-                    <div class="advantages">
-                        <div class="advantages__row">
-                            <div class="advantages__column">
-                                <div class="advantages__item">
-                                    <h2 class="advantages__title">Гарантия результата</h2>
-                                    <p class="advantages__text text">Прописываем гарантии в договоре. Не берем оплату, если долг не будет списан</p>
-                                </div>
+                </div>
+
+            </div>
+            <div class="advantages">
+                <div class="advantages__container container">
+                    <div class="advantages__row">
+                        <div class="advantages__column">
+                            <div class="advantages__item">
+                                <h2 class="advantages__title">Гарантия результата</h2>
+                                <p class="advantages__text text">Прописываем гарантии в договоре. Не берем оплату, если долг не будет списан</p>
                             </div>
-                            <div class="advantages__column">
-                                <div class="advantages__item">
-                                    <h2 class="advantages__title">Удобный формат работы</h2>
-                                    <p class="advantages__text text">Проводим процедуру банкротства как очно, так и дистанционно по всей России</p>
-                                </div>
+                        </div>
+                        <div class="advantages__column">
+                            <div class="advantages__item">
+                                <h2 class="advantages__title">Удобный формат работы</h2>
+                                <p class="advantages__text text">Проводим процедуру банкротства как очно, так и дистанционно по всей России</p>
                             </div>
-                            <div class="advantages__column">
-                                <div class="advantages__item">
-                                    <h2 class="advantages__title">Комфортная оплата</h2>
-                                    <p class="advantages__text text">Вы можете оформить рассрочку и разделить оплату на несколько месяцев</p>
-                                </div>
+                        </div>
+                        <div class="advantages__column">
+                            <div class="advantages__item">
+                                <h2 class="advantages__title">Комфортная оплата</h2>
+                                <p class="advantages__text text">Вы можете оформить рассрочку и разделить оплату на несколько месяцев</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
             </div>
-
+            <section class="problem">
+                <div class="problem__container container">
+                    <div class="problem__content">
+                        <div class="problem__top top-block">
+                            <h2 class="top-block__title">Сегодня все больше людей сталкиваются с трудностями
+                                <br>
+                                <b>выплат по кредитам</b>
+                            </h2>
+                        </div>
+                        <div class="problem__text">
+                            <p>Треть из них попадают в так называемую "Кредитную кабалу". Им приходится брать новые кредиты , чтобы гасить долги по старым.</p>
+                            <p>Тем самым они наносят ещё больший финансовый ущерб себе и банкам, т.к в итоге <b>это приводит к невозможности платить по взятым на себя долговым обязательствам.</b>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section class="steps">
                 <div class="steps__container container">
                     <div class="steps__top top-block">
@@ -125,39 +155,67 @@
                             <div class="item-steps__icon">
                                 <img src="images/steps/02.png" alt="">
                             </div>
-                            <div class="item-steps__number">01</div>
-                            <p class="item-steps__text text">Заключаем договор и готовим пакет документов, необходимых в вашей ситуации</p>
+                            <div class="item-steps__number">02</div>
+                            <p class="item-steps__text text">Подаем заявление в Арбитражный суд</p>
                         </div>
                         <div class="steps__item item-steps">
                             <div class="item-steps__icon">
                                 <img src="images/steps/03.png" alt="">
                             </div>
-                            <div class="item-steps__number">01</div>
-                            <p class="item-steps__text text">Заключаем договор и готовим пакет документов, необходимых в вашей ситуации</p>
+                            <div class="item-steps__number">03</div>
+                            <p class="item-steps__text text">Подбираем арбитражного управляющего для ведения процедуры</p>
                         </div>
                         <div class="steps__item item-steps">
                             <div class="item-steps__icon">
                                 <img src="images/steps/04.png" alt="">
                             </div>
-                            <div class="item-steps__number">01</div>
-                            <p class="item-steps__text text">Заключаем договор и готовим пакет документов, необходимых в вашей ситуации</p>
+                            <div class="item-steps__number">04</div>
+                            <p class="item-steps__text text">Представляем ваши интересы в суде, работаем над сохранением имущества</p>
                         </div>
                         <div class="steps__item item-steps">
                             <div class="item-steps__icon">
                                 <img src="images/steps/05.png" alt="">
                             </div>
-                            <div class="item-steps__number">01</div>
-                            <p class="item-steps__text text">Заключаем договор и готовим пакет документов, необходимых в вашей ситуации</p>
+                            <div class="item-steps__number">05</div>
+                            <p class="item-steps__text text">Передаем вам документы о списании долгов</p>
                         </div>
                     </div>
                     <div class="steps__bottom bottom-steps">
-                        <div class="bottom-steps__icon">
+                        <div class="bottom-steps__icon stroke">
                             <svg>
                                 <use xlink:href="images/icons/icons.svg#tick"></use>
                             </svg>
                         </div>
                         <h3 class="bottom-steps__title">В завершении процедуры банкротства должника освобождают от исполнения долговых обязательств перед кредиторами.</h3>
                         <p class="bottom-steps__text">От Вас требуется только прийти на консультацию и заключить с нами договор. Наши юристы сделают все сами.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="experiences">
+                <div class="experiences__container container">
+                    <div class="experiences__content">
+                        <div class="experiences__top top-block">
+                            <h2 class="top-block__title">Переживаете
+                                <br>
+                                из-за коллекторов
+                                <br>
+                                и служб взыскания?
+                            </h2>
+                        </div>
+                        <div class="experiences__contract contract-experiences">
+                            <div class="contract-experiences__image">
+                                <img src="images/experiences/document.png" alt="">
+                            </div>
+                            <div class="contract-experiences__content">
+                                <div class="contract-experiences__label">При заключении договора дарим:</div>
+                                <p class="contract-experiences__text">Пакет юридических услуг по "Защите от банков
+                                    <br>и коллекторов”
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experiences__image">
+                        <img src="images/experiences/man.png" alt="">
                     </div>
                 </div>
             </section>
@@ -226,31 +284,33 @@
                             <div class="item-debts__image">
                                 <img src="images/debts/02.png" alt="">
                             </div>
-                            <div class="item-debts__text">Кредиты</div>
+                            <div class="item-debts__text">Ипотека</div>
                         </div>
                         <div class="debts__item item-debts">
                             <div class="item-debts__image">
                                 <img src="images/debts/03.png" alt="">
                             </div>
-                            <div class="item-debts__text">Кредиты</div>
+                            <div class="item-debts__text">Микрозаймы</div>
                         </div>
                         <div class="debts__item item-debts">
                             <div class="item-debts__image">
                                 <img src="images/debts/04.png" alt="">
                             </div>
-                            <div class="item-debts__text">Кредиты</div>
+                            <div class="item-debts__text">Налоги
+                                <br>Долговые расписки
+                            </div>
                         </div>
-                        <div class="debts__item item-debts">
+                        <div class="debts__item debts__item_big item-debts">
                             <div class="item-debts__image">
                                 <img src="images/debts/05.png" alt="">
                             </div>
-                            <div class="item-debts__text">Кредиты</div>
+                            <div class="item-debts__text">Кредитные карты</div>
                         </div>
-                        <div class="debts__item item-debts">
+                        <div class="debts__item debts__item_big item-debts">
                             <div class="item-debts__image">
                                 <img src="images/debts/06.png" alt="">
                             </div>
-                            <div class="item-debts__text">Кредиты</div>
+                            <div class="item-debts__text">Автокредит</div>
                         </div>
                     </div>
                 </div>
@@ -291,6 +351,80 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </section>
+            <section class="new-life">
+                <div class="new-life__container container">
+                    <div class="new-life__block block-new-life">
+                        <div class="block-new-life__top">
+                            <h2 class="top-block__title top-block__title_left">“Жизнь после процедуры банкротства начинается
+                                <br>
+                                <span>
+                                    <b>с чистого листа”</b>
+                                </span>
+                            </h2>
+                        </div>
+                        <div class="block-new-life__bottom">
+                            <div class="block-new-life__image">
+                                <img src="images/new-life/handcuffs.png" alt="">
+                            </div>
+                            <p class="block-new-life__text">Можно не бояться звонков коллекторов или потери имущества</p>
+                        </div>
+                    </div>
+                    <div class="new-life__abilities abilities-new-life">
+                        <div class="abilities-new-life__title">Вы свободно сможете:</div>
+                        <div class="abilities-new-life__items">
+                            <div class="abilities-new-life__item">
+                                <div class="abilities-new-life__icon">
+                                    <img src="images/new-life/01.png" alt="">
+                                </div>
+                                <p class="abilities-new-life__text text">Брать кредиты</p>
+                            </div>
+                            <div class="abilities-new-life__item">
+                                <div class="abilities-new-life__icon">
+                                    <img src="images/new-life/02.png" alt="">
+                                </div>
+                                <p class="abilities-new-life__text text">Выезжать за границу</p>
+                            </div>
+                            <div class="abilities-new-life__item">
+                                <div class="abilities-new-life__icon">
+                                    <img src="images/new-life/03.png" alt="">
+                                </div>
+                                <p class="abilities-new-life__text text">Получать целиком зарплату или пенсию</p>
+                            </div>
+                            <div class="abilities-new-life__item">
+                                <div class="abilities-new-life__icon">
+                                    <img src="images/new-life/04.png" alt="">
+                                </div>
+                                <p class="abilities-new-life__text text">Регистрироваться в качестве индивидуального предпринимателя</p>
+                            </div>
+                            <div class="abilities-new-life__item">
+                                <div class="abilities-new-life__icon">
+                                    <img src="images/new-life/05.png" alt="">
+                                </div>
+                                <p class="abilities-new-life__text text">Без проблем устраиваться на любую работу</p>
+                            </div>
+                        </div>
+                        <div class="abilities-new-life__bottom">
+                            <a href="" class="abilities-new-life__button button">Получить услугу</a>
+                            <p class="abilities-new-life__label text">Теперь процедуру банкротства можно провести не выходя из дома. Всю работу сделают наши юристы.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="beginning">
+
+                <div class="beginning__container container">
+
+                    <div class="beginning__top top-block">
+                        <h2 class="top-block__title">Начните новую жизнь без долгов <b>уже сегодня</b>
+                        </h2>
+                        <p class="top-block__description">Вы снова вернетесь к полноценной жизни, где нет места тревоге и беспокойству</p>
+                    </div>
+                    <a href="" class="beginning__button">Избавиться от долгов</a>
+                    <div class="beginning__butterfly"></div>
+                    <div class="beginning__man"></div>
+                    <div class="beginning__bush"></div>
                 </div>
             </section>
         </main>
@@ -390,8 +524,8 @@
         </div>
 
     </div>
-    <script src="js/swiper-bundle.min.js?_v=20221013062800"></script>
-    <script src="js/script.js?_v=20221013062800"></script>
+    <script src="js/swiper-bundle.min.js?_v=20221014065641"></script>
+    <script src="js/script.js?_v=20221014065641"></script>
 </body>
 
 </html>
