@@ -1308,8 +1308,6 @@ a {
   position: absolute;
   top: 85px;
   left: -125px;
-  -webkit-transform: translate(-100%, 0);
-  transform: translate(-100%, 0);
 }
 
 .beginning__butterfly img {
@@ -1708,6 +1706,17 @@ a {
   visibility: hidden;
   width: 100%;
   max-width: 1140px;
+  overflow: hidden;
+}
+
+.modal::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 629px;
+  height: 680px;
+  background: url("../images/popup/popup-image.png") 0 0/cover no-repeat;
 }
 
 .modal__title {
@@ -1725,8 +1734,8 @@ a {
 }
 
 .modal__close {
-  width: 30px;
-  height: 20px;
+  width: 40px;
+  height: 30px;
   cursor: pointer;
   display: block;
   position: relative;
@@ -1748,8 +1757,8 @@ a {
 
 .modal__close span {
   cursor: pointer;
-  width: 30px;
-  height: 20px;
+  width: 40px;
+  height: 30px;
   position: relative;
   display: block;
 }
@@ -1762,7 +1771,7 @@ a {
   left: 0;
   -webkit-transform: translate(0, -50%);
   transform: translate(0, -50%);
-  background: #fff;
+  background: #262626;
   width: 100%;
   height: 1px;
   z-index: 55;
@@ -1778,6 +1787,19 @@ a {
   transform: rotate(45deg);
 }
 
+.form-modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
 .form-modal__input {
   max-width: 320px;
   margin-bottom: 24px;
@@ -1787,13 +1809,14 @@ a {
   margin-bottom: 30px;
 }
 
-.form-modal__checkbox {
-  display: inline-block;
-  margin-bottom: 15px;
+.form-modal__button {
+  width: 320px;
+  margin-bottom: 36px;
 }
 
 .form-modal__checkbox span {
-  color: #fff;
+  font-size: 12px;
+  width: 285px;
 }
 
 .modal__phone {
@@ -1810,7 +1833,12 @@ a {
 }
 
 .phone-modal__image {
+  -ms-flex-item-align: start;
+  align-self: flex-start;
   width: 124px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 124px;
+  flex: 0 0 124px;
   height: 55px;
   background: #EEF4F9;
   margin-right: 23px;
@@ -2308,6 +2336,27 @@ a {
   }
 }
 
+@media (min-width: 1800px) {
+  .beginning__butterfly {
+    -webkit-transform: translate(-100%, 0);
+    transform: translate(-100%, 0);
+  }
+}
+
+@media (max-width: 1800px) {
+  .beginning__butterfly {
+    left: 0;
+    top: 60%;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+  }
+
+  .beginning__butterfly img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
 @media (max-width: 1650.98px) {
   .location__image {
     display: none;
@@ -2383,10 +2432,6 @@ a {
 
   .problem::before {
     background: url("../images/problem/bushes.png") 0 0 no-repeat;
-  }
-
-  .beginning__container {
-    overflow: hidden;
   }
 
   .experiences {
@@ -2738,6 +2783,16 @@ a {
     min-height: 96px;
   }
 
+  .beginning__butterfly {
+    left: 38px;
+    top: 250px;
+  }
+
+  .beginning__butterfly img {
+    width: 134px;
+    height: 123px;
+  }
+
   .beginning__man {
     right: auto;
     left: 50%;
@@ -2788,6 +2843,19 @@ a {
 
   .contacts__block {
     margin-bottom: 60px !important;
+  }
+
+  .overlay {
+    padding: 20px;
+  }
+
+  .modal {
+    padding: 40px 20px 300px 20px;
+  }
+
+  .modal::before {
+    width: 480px;
+    height: 530px;
   }
 }
 
@@ -3125,7 +3193,7 @@ a {
   }
 
   .beginning__container {
-    padding-bottom: 200px;
+    padding-bottom: 130px;
     padding-top: 60px;
   }
 
@@ -3134,12 +3202,30 @@ a {
   }
 
   .beginning__button {
-    width: 100%;
+    width: calc(100% - 40px);
+    position: absolute;
+    bottom: 0;
+    z-index: 9;
+    left: 50%;
+    -webkit-transform: translate(-50%, 98%);
+    transform: translate(-50%, 98%);
+  }
+
+  .beginning__butterfly {
+    left: auto;
+    top: auto;
+    bottom: 260px;
+    right: 30px;
+  }
+
+  .beginning__butterfly img {
+    width: 78px;
+    height: 67px;
   }
 
   .beginning__man img {
-    width: 340px;
-    height: 280px;
+    width: 470px;
+    height: 350px;
   }
 
   .beginning__bush img {
@@ -3209,7 +3295,7 @@ a {
   }
 
   .contacts__container {
-    padding: 0 5px;
+    padding: 168px 5px 0 5px;
   }
 
   .contacts__body {
@@ -3288,6 +3374,40 @@ a {
 
   .checkbox span {
     font-size: 12px;
+  }
+
+  .overlay {
+    padding: 20px 0;
+  }
+
+  .modal {
+    padding: 20px 20px 300px 20px;
+  }
+
+  .modal::before {
+    width: 260px;
+    height: 280px;
+  }
+
+  .form-modal__button {
+    width: 289.6px;
+  }
+
+  .modal__phone {
+    margin-bottom: 25px;
+  }
+
+  .phone-modal__image {
+    margin-right: 15px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 80px;
+    flex: 0 0 80px;
+    width: 80px;
+    height: 45px;
+  }
+
+  .phone-modal__text {
+    font-size: 14px;
   }
 }
 
