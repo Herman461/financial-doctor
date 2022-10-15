@@ -42,6 +42,7 @@ body.lock {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
+  overflow: hidden;
 }
 
 *::-moz-selection {
@@ -217,6 +218,8 @@ a {
   font-size: 16px;
   line-height: 15px;
   color: #FFFFFF;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .button_big {
@@ -350,6 +353,8 @@ a {
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 10px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .phone__callback {
@@ -688,7 +693,7 @@ a {
 }
 
 .footer {
-  background: #fff;
+  background: #FBFBFB;
   position: relative;
   z-index: 7;
   padding: 52px 0 42px 0;
@@ -781,13 +786,14 @@ a {
 }
 
 .debts__top {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-bottom: 110px;
+  margin-bottom: 120px;
 }
 
 .debts__label {
@@ -797,6 +803,19 @@ a {
   font-size: 20px;
   line-height: 24px;
   color: #2AA026;
+}
+
+.debts__action {
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.debts__button {
+  -ms-flex-item-align: start;
+  align-self: flex-start;
 }
 
 .debts__column {
@@ -945,6 +964,7 @@ a {
 }
 
 .main-block__title {
+  margin-bottom: 30px;
   font-weight: 700;
   line-height: 140%;
   font-size: 50px;
@@ -977,13 +997,15 @@ a {
   position: absolute;
   bottom: 0;
   right: -30px;
-  width: 809px;
-  height: 644px;
+  width: 1035px;
+  height: 850px;
 }
 
 .main-block__image img {
   width: 100%;
   height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
 }
 
 .save-main-block {
@@ -1042,28 +1064,6 @@ a {
 
 .problem__play span {
   position: relative;
-}
-
-.problem__play span::before {
-  content: "";
-  position: absolute;
-  border-radius: 50%;
-  left: 0;
-  top: 0;
-  -webkit-transform: translate(-25%, -25%);
-  transform: translate(-25%, -25%);
-  border: 1px solid rgba(42, 160, 38, 0.1);
-}
-
-.problem__play span::after {
-  content: "";
-  position: absolute;
-  border-radius: 50%;
-  left: 0;
-  top: 0;
-  -webkit-transform: translate(-35%, -35%);
-  transform: translate(-35%, -35%);
-  border: 1px solid rgba(42, 160, 38, 0.1);
 }
 
 .problem__play a {
@@ -1145,6 +1145,7 @@ a {
 .block-new-life__top .top-block__title {
   font-family: "NAMU";
   font-weight: 400;
+  margin-bottom: 25px;
 }
 
 .block-new-life__bottom {
@@ -1214,6 +1215,10 @@ a {
   margin: 0;
 }
 
+.abilities-new-life__item:nth-child(odd) {
+  background: #fff;
+}
+
 .abilities-new-life__icon {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 58px;
@@ -1246,6 +1251,19 @@ a {
   min-height: 600px;
 }
 
+.beginning::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 200%;
+  top: 80%;
+  -webkit-transform: translate(-50%, -50%) rotate(-40deg);
+  transform: translate(-50%, -50%) rotate(-40deg);
+  left: 50%;
+  opacity: 0.95;
+  background: url("../images/beginning/bg-white.png") right center/contain no-repeat;
+}
+
 .beginning__container {
   min-height: 600px;
   position: relative;
@@ -1263,9 +1281,6 @@ a {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   text-align: center;
 }
 
@@ -1355,6 +1370,7 @@ a {
 
 .experiences__top .top-block__title {
   text-align: left;
+  margin-bottom: 0;
 }
 
 .experiences__image {
@@ -1420,6 +1436,8 @@ a {
   padding: 30px 0;
   max-width: 1240px;
   margin: 0 auto;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .block-contacts__title {
@@ -1521,6 +1539,38 @@ a {
   transform: scale(1);
 }
 
+.form-contacts__input.focus {
+  border-color: #2AA026;
+}
+
+.form-contacts__input.focus .input__icon {
+  border-color: #2AA026;
+}
+
+.form-contacts__input.focus .input__icon svg {
+  fill: #2AA026;
+}
+
+.form-contacts__input.focus input::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.form-contacts__input.focus input::-moz-placeholder {
+  color: transparent;
+}
+
+.form-contacts__input.focus input:-ms-input-placeholder {
+  color: transparent;
+}
+
+.form-contacts__input.focus input::-ms-input-placeholder {
+  color: transparent;
+}
+
+.form-contacts__input.focus input::placeholder {
+  color: transparent;
+}
+
 .input {
   background: #FBFBFB;
   border: 1px solid #F0F0F0;
@@ -1532,6 +1582,8 @@ a {
   -ms-flex-align: center;
   align-items: center;
   min-height: 96px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .input input {
@@ -1584,6 +1636,8 @@ a {
 }
 
 .input__icon {
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
   width: 95px;
   height: 56px;
   border-right: 1px solid rgba(38, 38, 38, 0.1);
@@ -1599,6 +1653,8 @@ a {
 }
 
 .input__icon svg {
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
   height: 26px;
   width: 26px;
   fill: #D0D0D0;
@@ -1827,10 +1883,6 @@ a {
   }
 
   .advantages {
-    margin-top: -136px;
-  }
-
-  .advantages {
     margin-top: -154px;
   }
 
@@ -1917,8 +1969,25 @@ a {
     margin-bottom: 20px;
   }
 
+  .debts__title {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 55%;
+    flex: 0 1 55%;
+    padding-right: 25px;
+  }
+
+  .debts__label {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+  }
+
   .debts__button {
     margin-right: 27px;
+  }
+
+  .item-debts__body {
+    padding-bottom: 110px !important;
   }
 
   .results {
@@ -1960,7 +2029,7 @@ a {
   }
 
   .main-block__image {
-    right: -170px;
+    right: -230px;
   }
 
   .problem__container {
@@ -1986,7 +2055,13 @@ a {
   }
 
   .new-life__abilities {
-    max-width: 485px;
+    max-width: 491px;
+  }
+
+  .beginning__content {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 
   .experiences__container {
@@ -2031,6 +2106,10 @@ a {
     padding-right: 54px;
     padding-left: 17px;
   }
+
+  .debts__column {
+    background: #fff;
+  }
 }
 
 @media (min-width: 1650.98px) {
@@ -2072,10 +2151,6 @@ a {
     font-size: calc(30px + 10 * ((100vw - 320px) / 920));
   }
 
-  .top-block__title {
-    font-size: calc(30px + 10 * ((100vw - 320px) / 920));
-  }
-
   .top-block__title span::before,
   .top-block__title span::after {
     width: calc(50px + 43 * ((100vw - 320px) / 920));
@@ -2105,16 +2180,16 @@ a {
     font-size: calc(14px + 4 * ((100vw - 320px) / 920));
   }
 
-  .debts__top {
-    margin-bottom: calc(60px + 50 * ((100vw - 320px) / 920));
-  }
-
   .item-debts__text {
     font-size: calc(18px + 4 * ((100vw - 320px) / 920));
   }
 
   .results__top {
     margin-bottom: calc(60px + 20 * ((100vw - 320px) / 920));
+  }
+
+  .main-block__body {
+    background: url("../images/intro/bg.jpg") 15% bottom/cover no-repeat;
   }
 
   .main-block__container {
@@ -2130,15 +2205,16 @@ a {
   }
 
   .main-block__image {
-    width: calc(360px + 449 * ((100vw - 320px) / 920));
-  }
-
-  .main-block__image {
-    height: calc(308px + 336 * ((100vw - 320px) / 920));
+    width: 850px;
+    height: 600px;
   }
 
   .save-main-block__text {
     font-size: calc(12px + 6 * ((100vw - 320px) / 920));
+  }
+
+  .problem::before {
+    background: url("../images/problem/bushes.png") 0 0 no-repeat;
   }
 
   .beginning__container {
@@ -2171,6 +2247,10 @@ a {
 @media (max-width: 991.98px) {
   .button {
     min-height: 76px;
+  }
+
+  .top-block__title {
+    font-size: 30px;
   }
 
   .top-block__title {
@@ -2325,9 +2405,23 @@ a {
     box-shadow: 0px 4px 15px rgba(95, 95, 95, 0.25);
   }
 
+  .steps {
+    margin-top: -10px;
+  }
+
+  .steps__container {
+    padding-top: 80px;
+  }
+
   .steps__items {
     margin-bottom: 70px;
     padding-bottom: 50px;
+  }
+
+  .steps__bottom {
+    width: calc(100% - 20px) !important;
+    margin: 0 auto;
+    border-radius: 10px;
   }
 
   .bottom-steps {
@@ -2346,8 +2440,16 @@ a {
     margin-bottom: -134px !important;
   }
 
+  .location__container {
+    padding-top: 82px;
+  }
+
   .debts__container {
     padding-top: 60px;
+  }
+
+  .debts__container {
+    padding-bottom: 60px;
   }
 
   .debts__button {
@@ -2366,6 +2468,10 @@ a {
     flex: 0 1 100%;
   }
 
+  .results__container {
+    padding-top: 60px;
+  }
+
   .main-block__body {
     background: url("../images/intro/bg-adaptive.png") 0 bottom/cover no-repeat;
   }
@@ -2374,6 +2480,18 @@ a {
     top: 40px;
     position: relative;
     z-index: 30;
+  }
+
+  .main-block__button {
+    width: 320px;
+    font-size: 12px;
+    padding: 0 28px;
+  }
+
+  .main-block__image {
+    width: 588px;
+    height: 472px;
+    right: -120px;
   }
 
   .problem::before {
@@ -2413,12 +2531,29 @@ a {
     background: url("../images/new-life/book.png") left bottom/100% auto no-repeat #FBFBFB;
   }
 
+  .new-life__body {
+    padding-top: 80px !important;
+  }
+
   .new-life__block {
     margin-bottom: 50px;
   }
 
+  .beginning {
+    min-height: 430px;
+  }
+
+  .beginning__container {
+    min-height: 430px;
+  }
+
   .beginning__container {
     padding-bottom: 400px;
+    padding-top: 80px;
+  }
+
+  .beginning__content {
+    min-height: 430px;
   }
 
   .beginning__content {
@@ -2463,6 +2598,10 @@ a {
   }
 
   .experiences__container {
+    padding-top: 80px;
+  }
+
+  .experiences__container {
     padding-bottom: 400px;
   }
 
@@ -2473,6 +2612,10 @@ a {
 
   .experiences__button {
     min-height: 96px;
+  }
+
+  .contacts {
+    padding-bottom: 80px;
   }
 
   .contacts__block {
@@ -2499,6 +2642,10 @@ a {
 
   .title {
     line-height: 130%;
+  }
+
+  .top-block__title b {
+    font-size: 40px;
   }
 
   .top-block__title span::before {
@@ -2563,6 +2710,10 @@ a {
     margin: 0;
   }
 
+  .steps__container {
+    padding-top: 50px;
+  }
+
   .steps__item {
     margin-bottom: 35px;
   }
@@ -2587,6 +2738,10 @@ a {
     font-size: 12px;
   }
 
+  .location__container {
+    padding-top: 50px;
+  }
+
   .location__map {
     margin: 0 -20px 30px -20px;
   }
@@ -2594,7 +2749,7 @@ a {
   .location__item {
     min-height: 200px;
     width: 200px;
-    margin: 0 auto 45px auto;
+    margin: 0 auto 60px auto;
   }
 
   .item-location::before {
@@ -2676,6 +2831,16 @@ a {
     padding-top: 40px;
   }
 
+  .debts__container {
+    padding-bottom: 40px;
+  }
+
+  .debts__label {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
   .item-debts__body {
     padding-bottom: 120px;
   }
@@ -2690,13 +2855,21 @@ a {
     align-items: center;
   }
 
+  .main-block__body {
+    min-height: 767px;
+  }
+
   .main-block {
     min-height: 767px;
   }
 
   .main-block__bottom {
-    margin-top: -36px;
+    margin-top: -44px;
     text-align: center;
+  }
+
+  .main-block__container {
+    min-height: 767px;
   }
 
   .main-block__button {
@@ -2707,6 +2880,12 @@ a {
   .main-block__label {
     margin-bottom: 95px;
     font-size: 12px;
+  }
+
+  .main-block__image {
+    right: -50px;
+    width: 411px;
+    height: 334px;
   }
 
   .save-main-block__image img {
@@ -2723,17 +2902,7 @@ a {
   }
 
   .problem__container {
-    padding-bottom: 620px;
-  }
-
-  .problem__play span::before {
-    width: 140px;
-    height: 140px;
-  }
-
-  .problem__play span::after {
-    width: 250px;
-    height: 250px;
+    padding-bottom: 610px;
   }
 
   .problem__play a {
@@ -2755,6 +2924,10 @@ a {
 
   .new-life__body {
     padding-bottom: 208px;
+  }
+
+  .new-life__body {
+    padding-top: 60px !important;
   }
 
   .block-new-life__image {
@@ -2785,6 +2958,11 @@ a {
 
   .beginning__container {
     padding-bottom: 200px;
+    padding-top: 60px;
+  }
+
+  .beginning__top {
+    text-align: left;
   }
 
   .beginning__button {
@@ -2808,6 +2986,10 @@ a {
 
   .experiences {
     background: url("../images/experiences/bg-adapt-320.png") 0 bottom/cover no-repeat;
+  }
+
+  .experiences__container {
+    padding-top: 50px;
   }
 
   .experiences__container {
@@ -2852,6 +3034,10 @@ a {
 
   .contract-experiences__text {
     font-size: 20px;
+  }
+
+  .contacts {
+    padding-bottom: 60px;
   }
 
   .contacts__container {
@@ -2941,6 +3127,10 @@ a {
   .debts__title {
     font-size: 27px;
   }
+
+  .debts__label {
+    font-size: 15px;
+  }
 }
 
 @media (min-width: 991.98px) and (max-width: 1240px) {
@@ -3009,6 +3199,14 @@ a {
     padding-right: 10px;
   }
 
+  .debts__title {
+    max-width: 580px;
+  }
+
+  .debts__label {
+    display: none;
+  }
+
   .debts__row {
     padding: 0 20px;
     -ms-flex-wrap: wrap;
@@ -3045,6 +3243,10 @@ a {
     right: -23%;
   }
 
+  .abilities-new-life__label {
+    width: 226px;
+  }
+
   .block-contacts {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3063,6 +3265,12 @@ a {
   }
 }
 
+@media (min-width: 410px) and (max-width: 725.98px) {
+  .debts__title {
+    padding-right: 125px;
+  }
+}
+
 @media (max-width: 991.98px) and (min-width: 725.98px) {
   .contacts__block {
     margin-bottom: 10px;
@@ -3071,7 +3279,13 @@ a {
 
 @media (any-hover: hover) {
   .button:hover {
-    background-color: #413378;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background: #3A9B3A;
+  }
+
+  .phone__item:hover {
+    color: #2AA026;
   }
 
   .menu__link:hover {

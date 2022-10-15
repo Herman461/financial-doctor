@@ -220,3 +220,18 @@ if (iconMenu) {
     menuContent.classList.toggle("active");
   });
 }
+
+var input = document.querySelectorAll('input');
+
+if (input.length > 0) {
+  for (var _index2 = 0; _index2 < input.length; _index2++) {
+    var item = input[_index2];
+    item.addEventListener('focus', function (e) {
+      console.log('log');
+      e.target.closest('.input').classList.add('focus');
+    });
+    item.addEventListener('blur', function (e) {
+      e.target.closest('.input').classList.remove('focus');
+    });
+  }
+}
