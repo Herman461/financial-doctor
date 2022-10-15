@@ -1479,66 +1479,6 @@ a {
   line-height: 155%;
 }
 
-.form-contacts__checkbox {
-  cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.form-contacts__checkbox input {
-  opacity: 0;
-  visibility: hidden;
-}
-
-.form-contacts__checkbox span {
-  font-size: 14px;
-  line-height: 145%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 230px;
-  position: relative;
-}
-
-.form-contacts__checkbox span::before {
-  content: "";
-  display: inline-block;
-  width: 20px;
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 20px;
-  flex: 0 0 20px;
-  height: 20px;
-  margin-right: 15px;
-  -webkit-box-shadow: inset 0px -4px 15px rgba(255, 255, 255, 0.1), inset 4px 0px 15px rgba(255, 255, 255, 0.1), inset -4px 0px 15px rgba(255, 255, 255, 0.1), inset 0px 4px 15px rgba(255, 255, 255, 0.1);
-  box-shadow: inset 0px -4px 15px rgba(255, 255, 255, 0.1), inset 4px 0px 15px rgba(255, 255, 255, 0.1), inset -4px 0px 15px rgba(255, 255, 255, 0.1), inset 0px 4px 15px rgba(255, 255, 255, 0.1);
-  border-radius: 2px;
-  border: 1px solid #81CD7E;
-}
-
-.form-contacts__checkbox span::after {
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-  content: "";
-  position: absolute;
-  top: 6px;
-  -webkit-transform: scale(0);
-  transform: scale(0);
-  left: 5px;
-  width: 11px;
-  height: 9px;
-  background: url("../images/icons/tick-small.svg") 0 0/contain no-repeat;
-}
-
-.form-contacts__checkbox input:checked + span::before {
-  background: linear-gradient(145.62deg, #81CD7E 20.31%, #3A9B3A 161.24%);
-}
-
-.form-contacts__checkbox input:checked + span::after {
-  -webkit-transform: scale(1);
-  transform: scale(1);
-}
-
 .form-contacts__input.focus {
   border-color: #2AA026;
 }
@@ -1658,6 +1598,234 @@ a {
   height: 26px;
   width: 26px;
   fill: #D0D0D0;
+}
+
+.checkbox {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.checkbox input {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.checkbox span {
+  font-size: 14px;
+  line-height: 145%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 230px;
+  position: relative;
+}
+
+.checkbox span::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 20px;
+  flex: 0 0 20px;
+  height: 20px;
+  margin-right: 15px;
+  -webkit-box-shadow: inset 0px -4px 15px rgba(255, 255, 255, 0.1), inset 4px 0px 15px rgba(255, 255, 255, 0.1), inset -4px 0px 15px rgba(255, 255, 255, 0.1), inset 0px 4px 15px rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0px -4px 15px rgba(255, 255, 255, 0.1), inset 4px 0px 15px rgba(255, 255, 255, 0.1), inset -4px 0px 15px rgba(255, 255, 255, 0.1), inset 0px 4px 15px rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+  border: 1px solid #81CD7E;
+}
+
+.checkbox span::after {
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  content: "";
+  position: absolute;
+  top: 6px;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  left: 5px;
+  width: 11px;
+  height: 9px;
+  background: url("../images/icons/tick-small.svg") 0 0/contain no-repeat;
+}
+
+.checkbox input:checked + span::before {
+  background: linear-gradient(145.62deg, #81CD7E 20.31%, #3A9B3A 161.24%);
+}
+
+.checkbox input:checked + span::after {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: auto;
+  height: 100%;
+  min-height: 100vh;
+  max-height: 100%;
+  z-index: 999;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  opacity: 0;
+  visibility: hidden;
+  background: rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal {
+  opacity: 0;
+  padding: 48px 70px;
+  border-radius: 10px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  visibility: hidden;
+  width: 100%;
+  max-width: 1140px;
+}
+
+.modal__title {
+  margin-bottom: 30px;
+}
+
+.modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal__content {
+  position: relative;
+  z-index: 5;
+}
+
+.modal__close {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  margin-bottom: 30px;
+}
+
+.modal__close::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  z-index: 60;
+}
+
+.modal__close span {
+  cursor: pointer;
+  width: 30px;
+  height: 20px;
+  position: relative;
+  display: block;
+}
+
+.modal__close span::before,
+.modal__close span::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  background: #fff;
+  width: 100%;
+  height: 1px;
+  z-index: 55;
+}
+
+.modal__close span::before {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.modal__close span::after {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.form-modal__input {
+  max-width: 320px;
+  margin-bottom: 24px;
+}
+
+.form-modal__input:last-child {
+  margin-bottom: 30px;
+}
+
+.form-modal__checkbox {
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.form-modal__checkbox span {
+  color: #fff;
+}
+
+.modal__phone {
+  margin-bottom: 40px;
+}
+
+.phone-modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.phone-modal__image {
+  width: 124px;
+  height: 55px;
+  background: #EEF4F9;
+  margin-right: 23px;
+  border-radius: 60px;
+}
+
+.phone-modal__image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.phone-modal__text {
+  font-size: 16px;
+  line-height: 155%;
+  max-width: 260px;
 }
 
 @media (min-width: 725.98px) {
@@ -3081,10 +3249,6 @@ a {
     margin-bottom: 25px;
   }
 
-  .form-contacts__checkbox span {
-    font-size: 12px;
-  }
-
   .form-contacts__input {
     margin-bottom: 25px;
   }
@@ -3120,6 +3284,10 @@ a {
   .input__icon svg {
     width: 20px;
     height: 20px;
+  }
+
+  .checkbox span {
+    font-size: 12px;
   }
 }
 

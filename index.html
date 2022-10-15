@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/style.css?_v=20221015202018">
-    <link rel="stylesheet" href="css/fancybox.css?_v=20221015202018">
+    <link rel="stylesheet" href="css/style.css?_v=20221015233811">
+    <link rel="stylesheet" href="css/fancybox.css?_v=20221015233811">
     <title>Главная</title>
 
 </head>
@@ -76,7 +76,7 @@
                                 <p class="save-main-block__text">Полностью и навсегда спишем долги и сохраним ваше имущество</p>
                             </div>
                             <div data-da=".main-block,725.98,last" class="main-block__bottom">
-                                <a href="" class="main-block__button button">Записаться на консультацию</a>
+                                <a href="" class="main-block__button button open-modal" data-modal="cost">Записаться на консультацию</a>
                                 <p class="main-block__label">записывайтесь на беплатную консультацию
                                     <br>и получите скидку 10% на любую услугу
                                 </p>
@@ -531,7 +531,7 @@
                             </div>
                             <div class="form-contacts__footer">
                                 <a href="" class="form-contacts__button button">Оставить заявку</a>
-                                <label class="form-contacts__checkbox">
+                                <label class="form-contacts__checkbox checkbox">
                                     <input type="checkbox">
                                     <span>Нажимая на кнопку, вы соглашаетесь на бработку персональных данных.</span>
                                 </label>
@@ -645,9 +645,46 @@
         </div>
 
     </div>
-    <script src="js/fancybox.umd.js?_v=20221015202018"></script>
-    <script src="js/swiper-bundle.min.js?_v=20221015202018"></script>
-    <script src="js/script.js?_v=20221015202018"></script>
+    <script src="js/fancybox.umd.js?_v=20221015233811"></script>
+    <div class="overlay active">
+        <div class="modal active" data-modal="cost">
+            <div class="modal__content">
+                <h4 class="modal__title title title">Заполните ваши персональные
+                    <br>контактные данные
+                </h4>
+                <div class="modal__phone phone-modal">
+                    <div class="phone-modal__image">
+                        <img src="images/popup/phone.png" alt="">
+                    </div>
+                    <p class="phone-modal__text">и наш менеджер свяжется с вами для уточнения деталей</p>
+                </div>
+                <form action="#" class="modal__form form-modal">
+                    <div class="form-modal__input input">
+                        <div class="input__icon">
+                            <svg>
+                                <use xlink:href="images/icons/icons.svg#user"></use>
+                            </svg>
+                        </div>
+                        <input placeholder="Ваше имя" type="text">
+                    </div>
+                    <div class="form-modal__input input">
+                        <div class="input__icon">
+                            <svg>
+                                <use xlink:href="images/icons/icons.svg#phone"></use>
+                            </svg>
+                        </div>
+                        <input placeholder="Ваш телефон" type="tel">
+                    </div>
+                    <label class="form-modal__checkbox checkbox">
+                        <input type="checkbox">
+                        <span>Нажимая на кнопку, вы соглашаетесь на бработку персональных данных.</span>
+                    </label>
+                    <button type="submit" class="form-modal__button button">Оставить заявку</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js?_v=20221015233811"></script>
 </body>
 
 </html>
