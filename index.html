@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/style.css?_v=20221015115553">
+    <link rel="stylesheet" href="css/style.css?_v=20221015141835">
+    <link rel="stylesheet" href="css/fancybox.css?_v=20221015141835">
     <title>Главная</title>
 
 </head>
@@ -133,9 +134,8 @@
                     <div class="problem__phone">
                         <div class="problem__play">
 
-                            <a href="">
+                            <a data-fancybox data-width="640" data-height="360" href="https://www.youtube.com/watch?v=acYd_y4OcdU" data-type="iframe" data-preload="false">
                                 <span></span>
-                                <img src="images/problem/play.png" alt="">
                             </a>
                         </div>
                     </div>
@@ -151,61 +151,64 @@
             </section>
             <section class="steps">
                 <div class="steps__container container">
-                    <div class="steps__top top-block">
-                        <h2 class="top-block__title">
-                            <span>
-                                <b>Главный</b>
-                            </span>
-                            <br>принцип нашей работы
-                        </h2>
-                        <p class="top-block__description">Основной принцип работы нашей компании заключается в том, чтобы облегчить для клиента весь путь прохождение процедуры банкротства.</p>
+                    <div class="steps__body container">
+                        <div class="steps__top top-block">
+                            <h2 class="top-block__title">
+                                <span>
+                                    <b>Главный</b>
+                                </span>
+                                <br>принцип нашей работы
+                            </h2>
+                            <p class="top-block__description">Основной принцип работы нашей компании заключается в том, чтобы облегчить для клиента весь путь прохождение процедуры банкротства.</p>
+                        </div>
+                        <div class="steps__items">
+                            <div class="steps__item item-steps">
+                                <div class="item-steps__icon">
+                                    <img src="images/steps/01.png" alt="">
+                                </div>
+                                <div class="item-steps__number">01</div>
+                                <p class="item-steps__text text">Заключаем договор и готовим пакет документов, необходимых в вашей ситуации</p>
+                            </div>
+                            <div class="steps__item item-steps">
+                                <div class="item-steps__icon">
+                                    <img src="images/steps/02.png" alt="">
+                                </div>
+                                <div class="item-steps__number">02</div>
+                                <p class="item-steps__text text">Подаем заявление в Арбитражный суд</p>
+                            </div>
+                            <div class="steps__item item-steps">
+                                <div class="item-steps__icon">
+                                    <img src="images/steps/03.png" alt="">
+                                </div>
+                                <div class="item-steps__number">03</div>
+                                <p class="item-steps__text text">Подбираем арбитражного управляющего для ведения процедуры</p>
+                            </div>
+                            <div class="steps__item item-steps">
+                                <div class="item-steps__icon">
+                                    <img src="images/steps/04.png" alt="">
+                                </div>
+                                <div class="item-steps__number">04</div>
+                                <p class="item-steps__text text">Представляем ваши интересы в суде, работаем над сохранением имущества</p>
+                            </div>
+                            <div class="steps__item item-steps">
+                                <div class="item-steps__icon">
+                                    <img src="images/steps/05.png" alt="">
+                                </div>
+                                <div class="item-steps__number">05</div>
+                                <p class="item-steps__text text">Передаем вам документы о списании долгов</p>
+                            </div>
+                        </div>
+                        <div class="steps__bottom bottom-steps">
+                            <div class="bottom-steps__icon stroke">
+                                <svg>
+                                    <use xlink:href="images/icons/icons.svg#tick"></use>
+                                </svg>
+                            </div>
+                            <h3 class="bottom-steps__title">В завершении процедуры банкротства должника освобождают от исполнения долговых обязательств перед кредиторами.</h3>
+                            <p class="bottom-steps__text">От Вас требуется только прийти на консультацию и заключить с нами договор. Наши юристы сделают все сами.</p>
+                        </div>
                     </div>
-                    <div class="steps__items">
-                        <div class="steps__item item-steps">
-                            <div class="item-steps__icon">
-                                <img src="images/steps/01.png" alt="">
-                            </div>
-                            <div class="item-steps__number">01</div>
-                            <p class="item-steps__text text">Заключаем договор и готовим пакет документов, необходимых в вашей ситуации</p>
-                        </div>
-                        <div class="steps__item item-steps">
-                            <div class="item-steps__icon">
-                                <img src="images/steps/02.png" alt="">
-                            </div>
-                            <div class="item-steps__number">02</div>
-                            <p class="item-steps__text text">Подаем заявление в Арбитражный суд</p>
-                        </div>
-                        <div class="steps__item item-steps">
-                            <div class="item-steps__icon">
-                                <img src="images/steps/03.png" alt="">
-                            </div>
-                            <div class="item-steps__number">03</div>
-                            <p class="item-steps__text text">Подбираем арбитражного управляющего для ведения процедуры</p>
-                        </div>
-                        <div class="steps__item item-steps">
-                            <div class="item-steps__icon">
-                                <img src="images/steps/04.png" alt="">
-                            </div>
-                            <div class="item-steps__number">04</div>
-                            <p class="item-steps__text text">Представляем ваши интересы в суде, работаем над сохранением имущества</p>
-                        </div>
-                        <div class="steps__item item-steps">
-                            <div class="item-steps__icon">
-                                <img src="images/steps/05.png" alt="">
-                            </div>
-                            <div class="item-steps__number">05</div>
-                            <p class="item-steps__text text">Передаем вам документы о списании долгов</p>
-                        </div>
-                    </div>
-                    <div class="steps__bottom bottom-steps">
-                        <div class="bottom-steps__icon stroke">
-                            <svg>
-                                <use xlink:href="images/icons/icons.svg#tick"></use>
-                            </svg>
-                        </div>
-                        <h3 class="bottom-steps__title">В завершении процедуры банкротства должника освобождают от исполнения долговых обязательств перед кредиторами.</h3>
-                        <p class="bottom-steps__text">От Вас требуется только прийти на консультацию и заключить с нами договор. Наши юристы сделают все сами.</p>
-                    </div>
+
                 </div>
             </section>
             <section class="experiences">
@@ -292,53 +295,74 @@
             </section>
             <section class="debts">
                 <div class="debts__container container">
-                    <div class="debts__top">
-                        <h2 class="debts__title title">Долги, которые списываются в процедуре банкротства</h2>
-                        <div class="debts__action">
-                            <a href="" class="debts__button button">Избавиться от долгов</a>
-                            <div class="debts__label">Начните новую жизнь без долгов уже сегодня</div>
+                    <div class="debts__body">
+                        <div class="debts__top">
+                            <h2 class="debts__title title">Долги, которые списываются в процедуре банкротства</h2>
+                            <div class="debts__action">
+                                <a href="" class="debts__button button">Избавиться от долгов</a>
+                                <div class="debts__label">Начните новую жизнь без долгов уже сегодня</div>
+                            </div>
+                        </div>
+                        <div class="debts__items">
+                            <div class="debts__item item-debts">
+                                <div class="item-debts__body">
+                                    <div class="item-debts__image">
+                                        <img src="images/debts/01.png" alt="">
+                                    </div>
+                                    <div class="item-debts__text">Кредиты</div>
+                                </div>
+
+                            </div>
+                            <div class="debts__item item-debts">
+                                <div class="item-debts__body">
+                                    <div class="item-debts__image">
+                                        <img src="images/debts/02.png" alt="">
+                                    </div>
+                                    <div class="item-debts__text">Ипотека</div>
+                                </div>
+
+                            </div>
+                            <div class="debts__item item-debts">
+                                <div class="item-debts__body">
+                                    <div class="item-debts__image">
+                                        <img src="images/debts/03.png" alt="">
+                                    </div>
+                                    <div class="item-debts__text">Микрозаймы</div>
+                                </div>
+
+                            </div>
+                            <div class="debts__item item-debts">
+                                <div class="item-debts__body">
+                                    <div class="item-debts__image">
+                                        <img src="images/debts/04.png" alt="">
+                                    </div>
+                                    <div class="item-debts__text">Налоги
+                                        <br>Долговые расписки
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="debts__item debts__item_big item-debts">
+                                <div class="item-debts__body">
+                                    <div class="item-debts__image">
+                                        <img src="images/debts/05.png" alt="">
+                                    </div>
+                                    <div class="item-debts__text">Кредитные карты</div>
+                                </div>
+
+                            </div>
+                            <div class="debts__item debts__item_big item-debts">
+                                <div class="item-debts__body">
+                                    <div class="item-debts__image">
+                                        <img src="images/debts/06.png" alt="">
+                                    </div>
+                                    <div class="item-debts__text">Автокредит</div>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
-                    <div class="debts__items">
-                        <div class="debts__item item-debts">
-                            <div class="item-debts__image">
-                                <img src="images/debts/01.png" alt="">
-                            </div>
-                            <div class="item-debts__text">Кредиты</div>
-                        </div>
-                        <div class="debts__item item-debts">
-                            <div class="item-debts__image">
-                                <img src="images/debts/02.png" alt="">
-                            </div>
-                            <div class="item-debts__text">Ипотека</div>
-                        </div>
-                        <div class="debts__item item-debts">
-                            <div class="item-debts__image">
-                                <img src="images/debts/03.png" alt="">
-                            </div>
-                            <div class="item-debts__text">Микрозаймы</div>
-                        </div>
-                        <div class="debts__item item-debts">
-                            <div class="item-debts__image">
-                                <img src="images/debts/04.png" alt="">
-                            </div>
-                            <div class="item-debts__text">Налоги
-                                <br>Долговые расписки
-                            </div>
-                        </div>
-                        <div class="debts__item debts__item_big item-debts">
-                            <div class="item-debts__image">
-                                <img src="images/debts/05.png" alt="">
-                            </div>
-                            <div class="item-debts__text">Кредитные карты</div>
-                        </div>
-                        <div class="debts__item debts__item_big item-debts">
-                            <div class="item-debts__image">
-                                <img src="images/debts/06.png" alt="">
-                            </div>
-                            <div class="item-debts__text">Автокредит</div>
-                        </div>
-                    </div>
+
                 </div>
             </section>
             <section class="results">
@@ -380,63 +404,66 @@
                 </div>
             </section>
             <section class="new-life">
-                <div class="new-life__container container">
-                    <div class="new-life__block block-new-life">
-                        <div class="block-new-life__top">
-                            <h2 class="top-block__title top-block__title_left">“Жизнь после процедуры банкротства начинается
-                                <br>
-                                <span>
-                                    <b>с чистого листа”</b>
-                                </span>
-                            </h2>
-                        </div>
-                        <div class="block-new-life__bottom">
-                            <div class="block-new-life__image">
-                                <img src="images/new-life/handcuffs.png" alt="">
+                <div class="new-life__body">
+                    <div class="new-life__container container">
+                        <div class="new-life__block block-new-life">
+                            <div class="block-new-life__top">
+                                <h2 class="top-block__title top-block__title_left">“Жизнь после процедуры банкротства начинается
+                                    <br>
+                                    <span>
+                                        <b>с чистого листа”</b>
+                                    </span>
+                                </h2>
                             </div>
-                            <p class="block-new-life__text">Можно не бояться звонков коллекторов или потери имущества</p>
-                        </div>
-                    </div>
-                    <div class="new-life__abilities abilities-new-life">
-                        <div class="abilities-new-life__title">Вы свободно сможете:</div>
-                        <div class="abilities-new-life__items">
-                            <div class="abilities-new-life__item">
-                                <div class="abilities-new-life__icon">
-                                    <img src="images/new-life/01.png" alt="">
+                            <div class="block-new-life__bottom">
+                                <div class="block-new-life__image">
+                                    <img src="images/new-life/handcuffs.png" alt="">
                                 </div>
-                                <p class="abilities-new-life__text text">Брать кредиты</p>
-                            </div>
-                            <div class="abilities-new-life__item">
-                                <div class="abilities-new-life__icon">
-                                    <img src="images/new-life/02.png" alt="">
-                                </div>
-                                <p class="abilities-new-life__text text">Выезжать за границу</p>
-                            </div>
-                            <div class="abilities-new-life__item">
-                                <div class="abilities-new-life__icon">
-                                    <img src="images/new-life/03.png" alt="">
-                                </div>
-                                <p class="abilities-new-life__text text">Получать целиком зарплату или пенсию</p>
-                            </div>
-                            <div class="abilities-new-life__item">
-                                <div class="abilities-new-life__icon">
-                                    <img src="images/new-life/04.png" alt="">
-                                </div>
-                                <p class="abilities-new-life__text text">Регистрироваться в качестве индивидуального предпринимателя</p>
-                            </div>
-                            <div class="abilities-new-life__item">
-                                <div class="abilities-new-life__icon">
-                                    <img src="images/new-life/05.png" alt="">
-                                </div>
-                                <p class="abilities-new-life__text text">Без проблем устраиваться на любую работу</p>
+                                <p class="block-new-life__text">Можно не бояться звонков коллекторов или потери имущества</p>
                             </div>
                         </div>
-                        <div class="abilities-new-life__bottom">
-                            <a href="" class="abilities-new-life__button button">Получить услугу</a>
-                            <p class="abilities-new-life__label text">Теперь процедуру банкротства можно провести не выходя из дома. Всю работу сделают наши юристы.</p>
+                        <div class="new-life__abilities abilities-new-life">
+                            <div class="abilities-new-life__title">Вы свободно сможете:</div>
+                            <div class="abilities-new-life__items">
+                                <div class="abilities-new-life__item">
+                                    <div class="abilities-new-life__icon">
+                                        <img src="images/new-life/01.png" alt="">
+                                    </div>
+                                    <p class="abilities-new-life__text text">Брать кредиты</p>
+                                </div>
+                                <div class="abilities-new-life__item">
+                                    <div class="abilities-new-life__icon">
+                                        <img src="images/new-life/02.png" alt="">
+                                    </div>
+                                    <p class="abilities-new-life__text text">Выезжать за границу</p>
+                                </div>
+                                <div class="abilities-new-life__item">
+                                    <div class="abilities-new-life__icon">
+                                        <img src="images/new-life/03.png" alt="">
+                                    </div>
+                                    <p class="abilities-new-life__text text">Получать целиком зарплату или пенсию</p>
+                                </div>
+                                <div class="abilities-new-life__item">
+                                    <div class="abilities-new-life__icon">
+                                        <img src="images/new-life/04.png" alt="">
+                                    </div>
+                                    <p class="abilities-new-life__text text">Регистрироваться в качестве индивидуального предпринимателя</p>
+                                </div>
+                                <div class="abilities-new-life__item">
+                                    <div class="abilities-new-life__icon">
+                                        <img src="images/new-life/05.png" alt="">
+                                    </div>
+                                    <p class="abilities-new-life__text text">Без проблем устраиваться на любую работу</p>
+                                </div>
+                            </div>
+                            <div class="abilities-new-life__bottom">
+                                <a href="" class="abilities-new-life__button button">Получить услугу</a>
+                                <p class="abilities-new-life__label text">Теперь процедуру банкротства можно провести не выходя из дома. Всю работу сделают наши юристы.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
+
             </section>
             <section class="beginning">
 
@@ -552,19 +579,19 @@
                         </div>
                     </div>
                     <div class="main-footer__column">
-                        <div class="main-footer__info info-footer">
-                            <div class="info-footer__item">
+                        <div class="main-footer__info main-footer__info_column info-footer">
+                            <div class="info-footer__item info-footer__item_visible">
                                 <span>ИП Пучков Олег Николаевич</span>
                             </div>
                             <div class="info-footer__items">
-                                <div class="info-footer__item">
+                                <div class="info-footer__item info-footer__item_visible">
                                     <span>ИНН:</span> 330572846013
                                 </div>
-                                <div class="info-footer__item">
+                                <div class="info-footer__item info-footer__item_visible">
                                     <span>ОГРНИП:</span> 321332800033354
                                 </div>
                             </div>
-                            <div class="info-footer__item">600001 а/я 9, г. Владимир</div>
+                            <div class="info-footer__item info-footer__item_visible">600001 а/я 9, г. Владимир</div>
                             <a href="" class="info-footer__politics">Политика в отношении
                                 <br>обработки персональных данных
                             </a>
@@ -572,28 +599,35 @@
                     </div>
                     <div class="main-footer__column">
                         <div class="main-footer__info info-footer">
-                            <div class="info-footer__item">
-                                <span>Наш адрес</span>
-                                <br>
-                                г. Астрахань, ул. Магистральная, 44а/1
+                            <div class="info-footer__column">
+                                <div class="info-footer__item">
+                                    <span>Наш адрес</span>
+                                    <br>
+                                    г. Астрахань, ул. Магистральная, 44а/1
+                                </div>
+                                <div class="info-footer__item">
+                                    <span>Тел. гор. линии</span>
+                                    <br>
+                                    8 (800) 550 11 58
+                                </div>
                             </div>
-                            <div class="info-footer__item">
-                                <span>Тел. гор. линии</span>
-                                <br>
-                                8 (800) 550 11 58
+
+                            <div class="info-footer__column">
+                                <div class="info-footer__item">
+                                    <span>Электронная почта</span>
+                                    <br>
+                                    centerkim@mail.ru
+                                </div>
+                                <div class="info-footer__item">
+                                    <span>Время работы</span>
+                                    <br>
+                                    пн-пт с 09:00 до 20:00
+                                    <br>
+                                    сб с 09:00 до 15:00, вс - выходной
+                                </div>
                             </div>
-                            <div class="info-footer__item">
-                                <span>Электронная почта</span>
-                                <br>
-                                centerkim@mail.ru
-                            </div>
-                            <div class="info-footer__item">
-                                <span>Время работы</span>
-                                <br>
-                                пн-пт с 09:00 до 20:00
-                                <br>
-                                сб с 09:00 до 15:00, вс - выходной
-                            </div>
+
+
                         </div>
                     </div>
                 </div>
@@ -602,8 +636,9 @@
         </div>
 
     </div>
-    <script src="js/swiper-bundle.min.js?_v=20221015115553"></script>
-    <script src="js/script.js?_v=20221015115553"></script>
+    <script src="js/fancybox.umd.js?_v=20221015141835"></script>
+    <script src="js/swiper-bundle.min.js?_v=20221015141835"></script>
+    <script src="js/script.js?_v=20221015141835"></script>
 </body>
 
 </html>
