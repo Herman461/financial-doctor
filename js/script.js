@@ -281,3 +281,14 @@ if (input.length > 0) {
     });
   }
 }
+
+window.addEventListener('scroll', function () {
+  if (document.documentElement.scrollTop > 10 && !header.classList.contains('scroll')) {
+    header.classList.add('scroll');
+    return;
+  }
+
+  if (document.documentElement.scrollTop <= 0 && header.classList.contains('scroll')) {
+    header.classList.remove('scroll');
+  }
+});
