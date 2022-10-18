@@ -3420,6 +3420,10 @@ a {
     align-self: flex-start;
   }
 
+  .item-our-services__image_small {
+    display: none;
+  }
+
   .item-our-services__content {
     -webkit-box-flex: 1;
     -ms-flex: 1 1 auto;
