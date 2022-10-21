@@ -486,7 +486,7 @@ a {
 .steps::before {
   content: "";
   position: absolute;
-  top: 150px;
+  top: 56px;
   left: 0;
   z-index: 5;
   width: 100%;
@@ -1851,7 +1851,22 @@ a {
   max-width: 1140px;
 }
 
+.modal__butterfly {
+  position: absolute;
+  top: 50px;
+  right: 48px;
+  z-index: 3;
+}
+
+.modal__butterfly img {
+  width: 143px;
+  height: 79px;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
 .modal__wrapper {
+  overflow: hidden;
   padding: 48px 70px;
   border-radius: 10px;
   background: #fff;
@@ -1863,16 +1878,30 @@ a {
   -ms-flex-direction: column;
   flex-direction: column;
   position: relative;
+  overflow: hidden;
+}
+
+.modal__wrapper::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+  background: url("../images/popup/white-bg.png") 0 0/cover no-repeat;
 }
 
 .modal__wrapper::before {
   content: "";
   position: absolute;
-  right: 0;
+  right: -289px;
   bottom: 0;
-  width: 629px;
-  height: 680px;
-  background: url("../images/popup/popup-image.png") 0 0/cover no-repeat;
+  height: 597px;
+  width: 938px;
+  z-index: 3;
+  background: url("../images/popup/popup-image.png") 0 0/contain no-repeat;
 }
 
 .modal__title {
@@ -1968,6 +1997,10 @@ a {
 .form-modal__button {
   width: 320px;
   margin-bottom: 36px;
+}
+
+.form-modal__checkbox input {
+  display: none !important;
 }
 
 .form-modal__checkbox span {
@@ -4336,12 +4369,23 @@ a {
   }
 
   .modal__wrapper::before {
-    width: 480px;
-    height: 530px;
+    width: 546px;
+    height: 291px;
+    bottom: 0;
+    right: auto;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
   }
 
   .modal__wrapper {
     padding: 40px 20px 300px 20px;
+  }
+
+  .modal__phone {
+    max-width: 375px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .intro {
@@ -5210,11 +5254,6 @@ a {
     padding: 20px 0;
   }
 
-  .modal__wrapper::before {
-    width: 260px;
-    height: 280px;
-  }
-
   .modal__wrapper {
     padding: 20px 20px 300px 20px;
   }
@@ -5727,6 +5766,43 @@ a {
 
   .block-contacts__title {
     max-width: 403px;
+  }
+
+  .modal__title {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 430px;
+    text-align: center;
+  }
+
+  .form-modal {
+    text-align: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    max-width: 680px;
+    margin: 0 auto;
+  }
+
+  .form-modal__input {
+    margin: 0 10px;
+  }
+
+  .form-modal__button {
+    margin: 0 -10px;
+  }
+
+  .form-modal__checkbox {
+    margin: 0 -10px;
+  }
+
+  .phone-modal__text {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 375px;
   }
 
   .additional-costs__content {
