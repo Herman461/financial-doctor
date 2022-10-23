@@ -3967,6 +3967,10 @@ a {
 }
 
 @media (max-width: 1800px) {
+  .problem::before {
+    background: url("../images/problem/bushes.png") 0 0 no-repeat;
+  }
+
   .beginning__butterfly {
     left: 0;
     top: 60%;
@@ -4033,10 +4037,6 @@ a {
   .main-block__image {
     width: 850px;
     height: 600px;
-  }
-
-  .problem::before {
-    background: url("../images/problem/bushes.png") 0 0 no-repeat;
   }
 
   .experiences {
