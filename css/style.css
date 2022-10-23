@@ -1080,6 +1080,8 @@ a {
   background: url("../images/icons/lines.svg") 0 10px no-repeat;
   background-size: 19px 13px;
   font-weight: 700;
+  position: relative;
+  z-index: 3;
   margin-left: 56px;
   text-align: left;
 }
