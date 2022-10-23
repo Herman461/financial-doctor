@@ -1182,7 +1182,7 @@ a {
 
 .main-block__body {
   min-height: 800px;
-  background: url("../images/intro/bg.jpg") 0 3px/cover no-repeat;
+  background: url("../images/intro/bg.jpg") 0 0/cover no-repeat;
 }
 
 .main-block__container {
